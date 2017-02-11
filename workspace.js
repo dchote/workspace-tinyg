@@ -530,6 +530,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             
             // Auto-Leveller
             // com-chilipeppr-ws-autolevel
+            /*
             chilipeppr.load(
                 "#com-chilipeppr-ws-autolevel",
                 "http://raw.githubusercontent.com/chilipeppr/widget-autolevel/master/auto-generated-widget.html",
@@ -556,7 +557,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                         });
                     });
                 }); //End Auto-Leveller
-
+            */
 
             // Macro
             // com-chilipeppr-ws-macro
@@ -1115,7 +1116,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             chilipeppr.load(
                 "#com-chilipeppr-3dviewer",
                 //"http://fiddle.jshell.net/chilipeppr/y3HRF/show/light/",
-                "http://raw.githubusercontent.com/chilipeppr/widget-3dviewer/master/auto-generated-widget.html",
+                "http://raw.githubusercontent.com/dchote/widget-3dviewer/master/auto-generated-widget.html",
     
                 function() {
                     console.log("got callback done loading 3d");
@@ -1135,7 +1136,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                                 $('#com-chilipeppr-3dviewer').addClass("noheight");
                                 $('#com-chilipeppr-widget-3dviewer').addClass("nomargin");
                                 $('#com-chilipeppr-3dviewer-controlpanel').append(element);
-                            }, 10);
+                            }, 100);
     
                             // listen to resize events so we can resize our 3d viewer
                             // this was done to solve the scrollbar residue we were seeing
@@ -1259,6 +1260,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             ); //End TinyG
 
             // Cayenn Widget
+            /*
             chilipeppr.load(
               "#com-chilipeppr-ws-cayenn",
               "http://raw.githubusercontent.com/chilipeppr/widget-cayenn/master/auto-generated-widget.html",
@@ -1298,7 +1300,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 );
               }
             );
-
+            */
             // WebRTC Client com-chilipeppr-webrtcclient
             /*
             chilipeppr.load(

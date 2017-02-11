@@ -217,6 +217,19 @@ body.hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+#com-chilipeppr-widget-3dviewer-body {
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+#com-chilipeppr-widget-3dviewer-renderArea {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important
+}
+
     </style>
 
     <script type='text/javascript'>
@@ -264,10 +277,10 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
         id: "com-chilipeppr-workspace-tinyg", // Make the id the same as the cpdefine id
         name: "Workspace / TinyG", // The descriptive name of your widget.
         desc: `This is a workspace for ChiliPeppr's Hardware Fiddle. It is geared towards CNC machines using TinyG.`,
-        url: "http://raw.githubusercontent.com/chilipeppr/workspace-tinyg/master/auto-generated-workspace.html", // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
-        fiddleurl: "http://ide.c9.io/chilipeppr/workspace-tinyg", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
-        githuburl: "http://github.com/chilipeppr/workspace-tinyg", // The backing github repo
-        testurl: "http://workspace-tinyg-chilipeppr.c9users.io/workspace.html", // The standalone working widget so can view it working by itself
+        url: "http://raw.githubusercontent.com/dchote/workspace-tinyg/master/auto-generated-workspace.html", // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
+        fiddleurl: "http://ide.c9.io/undefined/undefined", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
+        githuburl: "http://github.com/dchote/workspace-tinyg", // The backing github repo
+        testurl: "http://undefined-undefined.c9users.io/workspace.html", // The standalone working widget so can view it working by itself
 
         foreignSubscribe: {
             "/com-chilipeppr-elem-dragdrop/ondragover": "The Chilipeppr drag drop element will publish on channel /com-chilipeppr-elem-dragdrop/ondropped when a file is dropped so we subscribe to it so we can load a Gcode file when the user drags it onto the browser. It also adds a hover class to the bound DOM elem so we can add a CSS to hilite on hover",
@@ -753,6 +766,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             
             // Auto-Leveller
             // com-chilipeppr-ws-autolevel
+            /*
             chilipeppr.load(
                 "#com-chilipeppr-ws-autolevel",
                 "http://raw.githubusercontent.com/chilipeppr/widget-autolevel/master/auto-generated-widget.html",
@@ -779,7 +793,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                         });
                     });
                 }); //End Auto-Leveller
-
+            */
 
             // Macro
             // com-chilipeppr-ws-macro
@@ -1338,7 +1352,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             chilipeppr.load(
                 "#com-chilipeppr-3dviewer",
                 //"http://fiddle.jshell.net/chilipeppr/y3HRF/show/light/",
-                "http://raw.githubusercontent.com/chilipeppr/widget-3dviewer/master/auto-generated-widget.html",
+                "http://raw.githubusercontent.com/dchote/widget-3dviewer/master/auto-generated-widget.html",
     
                 function() {
                     console.log("got callback done loading 3d");
@@ -1358,7 +1372,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                                 $('#com-chilipeppr-3dviewer').addClass("noheight");
                                 $('#com-chilipeppr-widget-3dviewer').addClass("nomargin");
                                 $('#com-chilipeppr-3dviewer-controlpanel').append(element);
-                            }, 10);
+                            }, 100);
     
                             // listen to resize events so we can resize our 3d viewer
                             // this was done to solve the scrollbar residue we were seeing
@@ -1482,6 +1496,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
             ); //End TinyG
 
             // Cayenn Widget
+            /*
             chilipeppr.load(
               "#com-chilipeppr-ws-cayenn",
               "http://raw.githubusercontent.com/chilipeppr/widget-cayenn/master/auto-generated-widget.html",
@@ -1521,7 +1536,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 );
               }
             );
-
+            */
             // WebRTC Client com-chilipeppr-webrtcclient
             /*
             chilipeppr.load(

@@ -200,3 +200,16 @@ body.hover {
     padding: 4px 10px 10px 10px;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+#com-chilipeppr-widget-3dviewer-body {
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+#com-chilipeppr-widget-3dviewer-renderArea {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important
+}
